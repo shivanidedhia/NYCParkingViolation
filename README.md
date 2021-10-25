@@ -43,4 +43,4 @@ OPTIONAL --num_pages=1000, --init_offset=0
 - Top violation type was school zone speeding
 - Second was parking on street cleaning day
 
-<img src="assets/kibanadashboard.png" width=500>
+<img src="/project01/assets/kibanadashboard.png" width=500>
