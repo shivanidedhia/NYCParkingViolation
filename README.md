@@ -25,7 +25,7 @@ docker run -v ${PWD}:/app -e DATASET_ID=“XXX” -e APP_TOKEN=“XXX” -e ES_H
 
 OPTIONAL --num_pages=1000, --init_offset=0
 
-```
+
 ## Visualized the data in Kibana
 
 # Most Popular Violation Time
