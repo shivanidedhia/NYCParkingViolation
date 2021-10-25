@@ -12,35 +12,35 @@ The NYC Open Parking and Camera Violation Dashboard, the dataset has 71.55 milli
 
 Step 1: Enter into project01 folder
 ```
-cd project01/
-
-Step 2: Build the docker image 
+cd project01/ 
+```
+Step 2: Build the docker image
 ```
 docker build -t bigdata1:1.0 project01/
-```
+````
 
 Step 3: Run the docker container 
 ```
 docker run -v ${PWD}:/app -e DATASET_ID=“XXX” -e APP_TOKEN=“XXX” -e ES_HOST=“XXX” -e ES_USERNAME=“XXX” -e ES_PASSWORD=“XXX” bigdata1:1.0 --page_size=1000 
 
 OPTIONAL --num_pages=1000, --init_offset=0
-
+```
 
 ## Visualized the data in Kibana
 
-# Most Popular Violation Time
+1. Most Popular Violation Time
 
 - 8:36AM was the time when most violations occured. 
 
-# Total Fine Amount
+2. Total Fine Amount
 
 - More than 9 million fines were between $30 to $60.
 
-# Total Rows Loaded into Kibana
+3. Number of Violations Loaded into Kibana
 
-# Top 5 Violation Type
+4. Top 5 Violation Type
 
 - Top violation type was school zone speeding
 - Second was parking on street cleaning day
 
-<img src="/project01/assets/kibanadashboard.png" width=500>
+<img src="/project01/assets/kibanadashboard.png" width=1000>
