@@ -6,22 +6,28 @@ The NYC Open Parking and Camera Violation Dashboard, the dataset has 71.55 milli
 ## File Manifest
 
 project01/
-+-- Dockerfile
-+-- requirements.txt
-+-- src/
-+-- +-- main.py
-+-- assets/
-+-- +-- kibanadashboard.png
-+-- README
 
++-- Dockerfile
+
++-- requirements.txt
+
++-- src/
+
++-- +-- main.py
+
++-- assets/
+
++-- +-- kibanadashboard.png
+
++-- README
 
 ## Tech/Framework used
 
 ```
-- *Docker*
-- *Service*: ElasticSearch, Kibana
-- *Python*: sodapy, sys, argparse, json, requests, os, datetime, time
-
+- Docker
+- Service: ElasticSearch, Kibana
+- Python: sodapy, sys, argparse, json, requests, os, datetime, time
+```
 
 ## Features
 
@@ -41,6 +47,7 @@ docker run -v ${PWD}:/app -e DATASET_ID=“XXX” -e APP_TOKEN=“XXX” -e ES_H
 
 OPTIONAL --num_pages=1000, --init_offset=0
 ```
+
 ## API reference
 
 [Open Parking and Camera Violations](https://dev.socrata.com/foundry/data.cityofnewyork.us/nc67-uf89)
