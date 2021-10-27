@@ -43,9 +43,22 @@ docker build -t bigdata1:1.0 project01/
 
 Step 2: Run the docker container 
 ```
-docker run -v ${PWD}:/app -e DATASET_ID=“XXX” -e APP_TOKEN=“XXX” -e ES_HOST=“XXX” -e ES_USERNAME=“XXX” -e ES_PASSWORD=“XXX” bigdata1:1.0 --page_size=1000 
+docker run \
+	-e ES_HOST=yourhost \
+	-e DATASET_ID=“nc67-uf89”
+	-e INDEX_NAME=anyname \
+	-e ES_USERNAME=yourusername \
+	-e ES_PASSWORD=yourpassword \
+	-e APP_TOKEN=yourapptoken \
+	bigdata1:1.0 --page_size=2
 
-OPTIONAL --num_pages=1000, --init_offset=0
+```
+
+Step 3: Optional Arguments 
+
+```
+--num_pages=10, --init_offset=0
+
 ```
 
 ## API reference
