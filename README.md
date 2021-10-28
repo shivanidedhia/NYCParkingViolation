@@ -42,15 +42,8 @@ docker build -t bigdata1:1.0 project01/
 ````
 
 Step 2: Run the docker container 
-```
-docker run \
-	-e ES_HOST=yourhost \
-	-e DATASET_ID=“nc67-uf89”
-	-e INDEX_NAME=anyname \
-	-e ES_USERNAME=yourusername \
-	-e ES_PASSWORD=yourpassword \
-	-e APP_TOKEN=yourapptoken \
-	bigdata1:1.0 --page_size=2
+```	
+docker run -e DATASET_ID="nc67-uf89" -e APP_TOKEN=" " -e ES_HOST=  -e ES_USERNAME=" " -e ES_PASSWORD=" " -e INDEX_NAME="park" bigdata1:1.0 --num_pages=3 --page_size=2
 
 ```
 
