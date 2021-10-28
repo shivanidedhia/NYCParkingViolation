@@ -97,7 +97,7 @@ if __name__ == '__main__':
     for page in range(0, num_pages):
         start = time.time()
         start_time_to_get_rows = time.time()
-        rows = client.get(DATASET_ID, limit=args.page_size, offset=page*(args.page_size) + init_offset)
+        rows = client.get(DATASET_ID, limit=args.page_size, offset=page*(args.page_size) + init_offset, order="plate ASC")
         end_time_to_get_rows = time.time()
         print("Time to make DB Call:" + str(end_time_to_get_rows - start_time_to_get_rows))
         
